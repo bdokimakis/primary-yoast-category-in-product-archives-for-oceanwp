@@ -42,7 +42,7 @@ echo '<ul class="woo-entry-inner clr">';
 		if ( 'category' == $element ) {
 
 			do_action( 'ocean_before_archive_product_categories' );
-			echo '<li class="category">' . wp_kses_post(get_primary_taxonomy_term($product->get_id(), 'product_cat')) . '</li>';
+			echo '<li class="category">' . wp_kses_post(pycipafo_get_primary_taxonomy_term($product->get_id(), 'product_cat')) . '</li>';
 			do_action( 'ocean_after_archive_product_categories' );
 
 		}

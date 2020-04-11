@@ -16,7 +16,7 @@ function pycipafo_replace_template( $template, $template_name, $template_path ) 
 	return $template;
 }
 
-function get_primary_taxonomy_term( $post = 0, $taxonomy = 'category' ) {
+function pycipafo_get_primary_taxonomy_term( $post = 0, $taxonomy = 'category' ) {
 	$terms = get_the_terms( $post, $taxonomy );
 
 	if ( $terms && class_exists( 'WPSEO_Primary_Term' ) ) {
